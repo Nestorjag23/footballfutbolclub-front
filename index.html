@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Football Futbol Club</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo-text">FootballFutbolClub</h1>
+                <nav>
+                    <a href="admin.html" class="back-to-store">Administración</a>
+                </nav>
+                <div class="cart-header">
+                    <button id="toggle-cart-btn" class="toggle-cart-btn">Carrito (<span id="cart-count">0</span>)</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="cart-dropdown" class="cart-dropdown">
+        <div id="cart-items" class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong>Total: €<span id="cart-total">0.00</span></strong>
+        </div>
+        <button id="checkout-btn" class="checkout-btn">Finalizar Compra</button>
+    </div>
+
+    <main class="container">
+        <section class="filters-section">
+            <h2>Filtrar Productos</h2>
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="team-filter">Equipo:</label>
+                    <select id="team-filter">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="season-filter">Temporada:</label>
+                    <select id="season-filter">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="state-filter">Calidad:</label>
+                    <select id="state-filter">
+                        <option value="">Todos</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="size-filter">Talla:</label>
+                    <select id="size-filter">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="brand-filter">Marca:</label>
+                    <select id="brand-filter">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-filter">Precio Máximo:</label>
+                    <input type="range" id="price-filter" min="0" max="200" value="200">
+                    <span id="price-value">€200</span>
+                </div>
+                <button id="apply-filters-btn">Aplicar Filtros</button>
+                <button id="clear-filters-btn">Limpiar Filtros</button>
+            </div>
+        </section>
+
+        <section class="product-list-section">
+            <h2>Productos Disponibles</h2>
+            <div id="product-list" class="product-list">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 FutbolFutbolClub - Tienda Online</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
